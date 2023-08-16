@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: rgb(238, 246, 252);
+    width: 100%;
+    padding: 40px;
+    display: flex;
+}       
+body{
+    width: 100%;
+    background-color: rgb(238, 246, 252);
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 250px;
+    z-index: 1;
+}    
+.logo:hover {
+    transform: scale(1.5);
+}
+.titulo{
+    position: relative;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+.titulo:hover{
+    transform: scale(1.2);
+    
+}
+
+/*menu*/
+
+
+.navegador{
+    background-color: rgb(1, 187, 42);
+    padding: 20px;
+    
+}
+.navegador .menu ul li a{
+    color:rgb(0, 70, 15);
+    animation: text 2s linear infinite;
+}
+@keyframes text{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+.navegador .menu a{
+    text-decoration: none;
+    color: rgb(0, 61, 5);
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li a{
+    position: relative;
+    padding:1px 40px;
+}
+.menu li:hover{
+    background-color: rgb(151, 218, 165);
+}
+
+/*submenu*/
+.submenu{
+    display: none;
+    /*position:relative;*/
+    background-color: rgb(1, 187, 42);
+    position:absolute;
+    list-style: none;
+}
+
+.menu li:hover .submenu{
+    display:block;
+}
+.submenu li{
+    padding: 5px 10px;
+}
+.submenu li.hover{
+    background-color: rgb(43, 220, 226);
+}
+
+.clase1{
+    width:100%;
+    height: 400px;
+    background-color: rgb(78, 223, 85);
+    overflow: hidden;
+}
+.clase1 ul{
+    display: flex;
+    animation:desplazar 20s infinite alternate linear;
+    width: 500px;
+}
+.clase1 li{
+    width:1000px;
+}
+.clase1 img{
+    width: 400px;
+    height: 400px;
+}
+@keyframes desplazar{
+    0%{margin-left:0;}
+    20%{margin-left:0;}
+
+    25%{margin-left:-20%;}
+    45%{margin-left:-1;}
+
+    50%{margin-left: -10%;}
+    70%{margin-left:-10%;}
+   
+}
+
+
+
